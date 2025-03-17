@@ -1,0 +1,91 @@
+.navbar {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+  
+  
+}
+.app{
+  width: 80%;
+  margin: auto;
+
+}
+
+.logo {
+    
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.navbar_menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar_menu li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar_menu li:hover {
+  color: #ff6347;
+}
+
+.navbar_right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  height: 25px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+
+.button button {
+  border:1px solid  rgb(165, 165, 165);
+  color: black;
+  padding: 10px 20px;
+  border-radius:50px ;
+  font-size: max(1vw,13px);
+
+  cursor: pointer;
+  background: white;
+  transition: background-color 0.3s ease;
+}
+
+.button button:hover {
+  background-color: #ff4500;
+}
+.navbar .active{
+  padding-bottom: 2px;
+  border-bottom: 2px solid #49557e;
+
+}
+
+.navbar_searchicon{
+  position: relative;
+
+}
+.navbar_searchicon .dot{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: #ff4500 ;
+  border-radius: 5px;
+}
