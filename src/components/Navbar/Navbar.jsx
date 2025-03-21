@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { assets } from "../../assets/assets";
-const Navbar = () => {
+const Navbar = ({setlogin}) => {
   const [menu, setmenu] = useState("home");
 
   return (
@@ -45,7 +45,9 @@ const Navbar = () => {
           <div className="dot"></div>
         </div>
         <div className="button">
-          <button>sign in</button>
+          <button onClick={()=>{
+           setlogin(true);
+          }}>sign in</button>
         </div>
       </div>
     </div>

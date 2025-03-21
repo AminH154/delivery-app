@@ -1,0 +1,112 @@
+.loginpop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.loginpop-container {
+  background: white;
+  padding: 30px;
+  gap: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.loginpop-container-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.loginpop-container-title h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.loginpop-container-title img {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.loginpop-container-text input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.loginpop-container-text input:focus {
+  border-color: #ff6347;
+  outline: none;
+}
+
+.loginpop-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loginpop-container button:hover {
+  background-color: #ff4500;
+}
+.check{
+  text-align: left;
+}
+.loginpop-condition {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 14px;
+  color: #666;
+}
+.check span {
+  color: #ff6347;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 5px;
+  transition: color 0.3s ease;
+}
+.check p {
+  font-size: 14px;
+  color: #333;
+
+}
+
+.check span:hover {
+  color: #ff4500;
+}
