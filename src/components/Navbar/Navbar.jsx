@@ -7,7 +7,10 @@ const Navbar = ({setlogin}) => {
 
   return (
     <div className="navbar">
+      <Link to="/">
       <img src={assets.logo} alt="" className="logo" />
+      </Link>
+    
       <ul className="navbar_menu">
         <Link
           to="/"
@@ -41,7 +44,7 @@ const Navbar = ({setlogin}) => {
       <div className="navbar_right">
         <img src={assets.search_icon} alt="" />
         <div className="navbar_searchicon">
-          <img src={assets.basket_icon} alt="" />
+         <Link to='/cart'><img src={assets.basket_icon} alt="" />   </Link> 
           <div className="dot"></div>
         </div>
         <div className="button">

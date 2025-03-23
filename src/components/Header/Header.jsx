@@ -1,19 +1,27 @@
 import React from "react";
 import "./Header.css";
+import ExploreMenu from "../ExploreMenu/ExploreMenu";
 
 function Header() {
+  const handleViewMenu = () => {
+    const exploreMenuSection = document.getElementById("explore-menu");
+    if (exploreMenuSection) {
+      exploreMenuSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="header">
       <div className="header-contents">
         <h1>Order your favourite food</h1>
         <p>
-          chosse from a deverse menu featuring a delectable array of dishes
-          crafted with the fineset ingredients and culinary expertise.Our
+          Choose from a diverse menu featuring a delectable array of dishes
+          crafted with the finest ingredients and culinary expertise. Our
           mission is to satisfy your cravings and elevate your dining
-          experience, one delicious meal at a time
+          experience, one delicious meal at a time.
         </p>
 
-        <button>View Menu</button>
+        <button onClick={handleViewMenu}>View Menu</button>
       </div>
     </div>
   );

@@ -21,7 +21,7 @@ function FoodDesplay({ category }) {
         {filteredFoodList.map((item, index) => (
           <FoodItem
             key={index}
-            id={index}
+            id={index+1}
             name={item.name}
             price={item.price}
             description={item.description}
