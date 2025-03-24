@@ -6,7 +6,7 @@ import App from './../../App';
 function AppDowload() {
   return (
     <div className='appdownload ' id='appdownload'>
-        <p>For Better Experience Download <br />Tomato App</p>
+        <p>For Better Experience Download <br />Bakso pak Kumis App</p>
         <div className="app-download-platforms">
 
         <img src={assets.play_store} alt="" />
