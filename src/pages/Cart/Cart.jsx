@@ -56,7 +56,7 @@ const Cart = () => {
               <p>subtotal</p>
               <p>${  getTotalCartAmount()+2}</p>
           </div>
-          <button onClick={()=>Navigate('/order')}>PROCEED TO CHEKOUT</button>
+          <button onClick={() => { if (getTotalCartAmount() !== 0) Navigate('/order'); }}>PROCEED TO CHEKOUT</button>
         </div>
         <div className="cart-promo-code">
           <p>if you have a promo code,Enter it here </p>

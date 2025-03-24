@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import './Placeholder'
+import './Placeholder.css'
 import { storeContext } from "../../context/StoreProviderContext";
 function Placeholder() {
   const {getTotalCartAmount}=useContext(storeContext)
