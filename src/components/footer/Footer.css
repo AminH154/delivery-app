@@ -9,6 +9,15 @@
   margin-top: 100px;
   padding-top: 80px;
 }
+.logo{
+  background-color:#323232;
+  size:  max(1vw, 150px);
+  width: 100px;
+  height: 100px;
+  transition: transform 0.3s ease;
+}
+
+
 .footer-content {
   width: 100%;
   display: grid;
