@@ -1,4 +1,4 @@
-#description :
+# description :
  Bakso pak Kumis est une application web de livraison rapide et efficace développée avec React.js. Elle permet aux utilisateurs de commander des repas,
 des courses ou d'autres articles en quelques clics. Grâce à une interface intuitive et réactive, les clients peuvent suivre leurs commandes en temps réel,
 choisir leur mode de paiement et noter les livreurs.
